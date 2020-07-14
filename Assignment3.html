@@ -1,0 +1,32 @@
+<html>
+    <head> 
+        <title>Printing the dates in different Format</title>
+        </head>
+        <body>
+            <script>
+            var date=new Date();
+            document.write(date );
+            document.write("<br>");
+        var f1 =    (((date.getMonth() > 8) ? (date.getMonth() + 1) : ('0' + (date.getMonth() + 1))) + '/' + ((date.getDate() > 9) ? date.getDate() : ('0' + date.getDate())) + '/' + date.getFullYear());
+       document.write("mm/dd/yyyy:  ")
+        document.write(f1);
+        document.write("<br>");
+        var f2 =    (((date.getMonth() > 8) ? (date.getMonth() + 1) : ('0' + (date.getMonth() + 1))) + '-' + ((date.getDate() > 9) ? date.getDate() : ('0' + date.getDate())) + '-' + date.getFullYear());
+       document.write("mm-dd-yyyy:  ")
+        document.write(f2);
+        document.write("<br>");
+        var f3 =    (((date.getDate() > 9) ? date.getDate() : ('0' + date.getDate())) + '-' +((date.getMonth() > 8) ? (date.getMonth() + 1) : ('0' + (date.getMonth() + 1))) + '-' +  date.getFullYear());
+       document.write("dd-mm-yyyy:  ")
+        document.write(f3);
+        document.write("<br>");
+        var f4 =    (((date.getDate() > 9) ? date.getDate() : ('0' + date.getDate())) + '/' +((date.getMonth() > 8) ? (date.getMonth() + 1) : ('0' + (date.getMonth() + 1))) + '/' +  date.getFullYear());
+       document.write("dd/mm/yyyy:  ")
+        document.write(f4);
+        document.write("<br>");
+            
+        </script>
+        
+        </body>
+
+
+</html>
